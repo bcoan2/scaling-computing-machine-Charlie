@@ -20,7 +20,6 @@
   </head>
   <body>
 
-
     <!-- This is the container with everything on the page -->
      <div class="container-fluid">
      </div>
@@ -46,10 +45,13 @@
 
 
 
+<!-- reset game button -->
+      <button id="resetGame" 
+      class="btn btn-secondary" 
+      style= "background-color: blue; border-color: black; color: white" >Reset Game
+      </button>
 
-      <button id="resetGame" class="btn btn-secondary" style= "background-color: blue; border-color: black; color: white" >Reset Game</button>
-
-
+<!-- Event counter -->
     <ul class="ui-helper-reset">
       <li id="event-drag" class="ui-state-default ui-corner-all">
         <span class="ui-icon ui-icon-arrow-4">
@@ -61,6 +63,7 @@
       </li>
     </ul>
 
+    <!-- Da doge movin -->
     <div id="draggable" 
          class="ui-widget-content ui-widget">
       <img
@@ -72,7 +75,6 @@
 
 
 
-    <div id="gameOutput"></div>
 
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
