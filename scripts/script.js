@@ -4,13 +4,15 @@ $(function () {
   var $drag_counter = $("#event-drag"),
     counts = 0;
 
-  $("#resetGame").click(function () {
-    console.log("clicked button");
-    counts = 0;
-    $("span.count").text(counts);
-    $("#gameOutput").text("");
-  });
-
+    $("#resetGame").click(function () {
+      console.log("clicked button");
+      counts = 0;
+  
+      $("span.count").text(counts);
+      $("#gameOutput").text("");
+  
+      $("#draggable").fadeOut(200).animate({ left: 0 }).fadeIn(200);
+    });
   $("#draggable").draggable({
     drag: function () {
       counts++;
